@@ -1,0 +1,41 @@
+.Cupcake-img {
+    width: 250px; 
+    height: 250px;
+}
+
+.description {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: blueviolet;
+}
+
+h1 {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: blueviolet;
+}
+
+.delete-button {
+    background-color: white;
+    color: black;
+    border: 3px solid #e7e7e7;
+    border-radius: 50%;
+}
+
+.form {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: blueviolet;
+}
+
+h2 {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: blueviolet;
+}
+
+p { 
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: blueviolet;
+}
+
+body {
+    background-image:url("https://i.etsystatic.com/8274094/r/il/072703/1818738728/il_794xN.1818738728_lirz.jpg");
+}
+

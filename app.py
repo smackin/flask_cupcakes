@@ -17,7 +17,7 @@ def root():
     """displays homepage with cupcake form"""
     return render_template("index.html")
 
-@app.route('/api/cupcakes')
+@app.route('/api/cupcakes/')
 def list_all_cupcakes():
     """return a list of all cupcakes in db
         as JSON 
@@ -40,9 +40,7 @@ def create_cupcake():
     """add new cupcake and returnd the data in JSON
     {cupcake: [{id, flavor, rating, size, image}]}
     """  
-    
     data = request.json
-    
     cupcake = Cupcake(
         flavor = data['flavor'], 
         rating = data['rating'], 
@@ -54,7 +52,6 @@ def create_cupcake():
     
     # POST requests should return HTTP status of 201 Created
     return (jsonify(cupcake=cupcake.to_dict()), 201)
-    
     
 @app.route('/api/cupcakes/<int:id>', methods=['PATCH'])
 def update_cupcake(id):
